@@ -18,10 +18,15 @@ public class Tarea {
     private int prioridad;
     private boolean estado;
 
-    // Muchas tareas pueden pertenecer a un solo usuario
+    //muchas tareas pueden pertenecer a un solo usuario
     @ManyToOne
+    //FK que apunta al id del usuario
     @JoinColumn(name = "id_usuario")
     private Usuario usuario;
+
+    @ManyToOne
+    @JoinColumn(name = "id_categoria")
+    private Categoria categoria;
 
     public String getTitulo() {
         return titulo;
