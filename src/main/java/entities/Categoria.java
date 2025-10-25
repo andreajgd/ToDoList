@@ -5,7 +5,6 @@ import java.util.List;
 
 @Entity
 @Table(name = "categorias")
-
 public class Categoria {
 
     @Id
@@ -37,3 +36,4 @@ public class Categoria {
         this.tareas = tareas;
     }
 }
+
