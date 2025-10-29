@@ -28,6 +28,10 @@ public class Tarea {
     @JoinColumn(name = "id_categoria")
     private Categoria categoria;
 
+    public Long getId() {
+        return id;
+    }
+
     public String getTitulo() {
         return titulo;
     }

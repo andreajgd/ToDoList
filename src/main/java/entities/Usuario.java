@@ -19,4 +19,8 @@ public class Usuario {
 
     public Usuario() {
     }
+
+    public Long getId() {
+        return id;
+    }
 }

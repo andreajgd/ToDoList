@@ -18,6 +18,10 @@ public class Categoria {
     @OneToMany(mappedBy = "categoria")
     private List<Tarea> tareas;
 
+    public Long getId() {
+        return id;
+    }
+
     public Categoria() {}
 
     public String getNombre() {
